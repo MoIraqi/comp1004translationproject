@@ -1,1 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.json-upload, .word-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.downloadfood-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.downloadanimal-button {
+    position: fixed;
+    top: 20px;
+    left: 250px;
+}
+.downloadcountries-button {
+    position: fixed;
+    top: 20px;
+    left: 490px;
+}
