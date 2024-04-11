@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translation Dictionary</title>
+    <!--Linking CSS file-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <div class="download-buttons-container">
+                <!--Download Buttons for JSON Categories-->
+                <a href="food.json" download="food.json" class="download-button">Download Food JSON File</a>
+                <a href="animal.json" download="animal.json" class="download-button">Download Animal JSON File</a>
+                <a href="countries.json" download="countries.json" class="download-button">Download Countries JSON File</a>
+                <a href="greetings.json" download="greetings.json" class="download-button">Download Greetings JSON File</a>
+                <a href="colour.json" download="colour.json" class="download-button">Download Colour JSON File</a>
+                <a href="weather.json" download="weather.json" class="download-button">Download Weather JSON File</a>
+                <a href="clothes.json" download="clothes.json" class="download-button">Download Clothes JSON File</a>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>Translation Dictionary</h1>
+        <div class="input-box">
+            <label for="json-input">Upload JSON file:</label>
+            <input type="file" id="json-input">
+            <!--Button to load JSON file-->
+            <button onclick="handleFile()">Load JSON</button>
+        </div>
 
-        <label for="json-input">Upload JSON file:</label>
-        <input type="file" id="json-input">
-        <button onclick="handleFile()">Load JSON</button>
-
-        <label for="word-input">Enter a word:</label>
-        <input type="text" id="word-input">
-        <button onclick="translateWord()">Translate</button>
-
-        <p id="translation-output"></p>
+        <div class="input-box">
+            <label for="word-input">Enter a word:</label>
+            <input type="text" id="word-input">
+            <!--Button to translate English word-->
+            <button onclick="translateWord()">Translate</button>
+            <p id="translation-output"></p>
+        </div>
     </div>
-
-    <!-- Button to trigger download -->
-    <a href="food.json" download="food.json" class="downloadfood-button">
-        <button>Download Food JSON File:</button>
-    </a>
-        <a href="animal.json" download="animal.json" class="downloadanimal-button">
-        <button>Download Animal JSON File:</button>
-    </a>
-    <a href="countries.json" download="countries.json" class="downloadcountries-button">
-        <button>Download Countries JSON File:</button>
-    </a>
-
+<!--Fun fact box-->
+    <div class="fun-fact-box" id="fun-fact-box">
+        <div class="fun-fact-content"></div>
+    </div>
+<!--Linking JavaScript file-->
     <script src="script.js"></script>
 </body>
 </html>
