@@ -1,54 +1,99 @@
+/* Body element */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0; /* Resetting default margin */
+    padding: 0; /* Resetting default padding */
+    font-family: Arial, sans-serif; /* Setting font family */
+    background-color: #f3f3f3; /* Background color for the body */
+    background-image: url('https://wallpapers.com/images/featured/paris-zy4x2ow5p7j5qi4a.jpg'); /* Background image */
+    background-size: cover; /* Background image size */
+    background-repeat: no-repeat; /* Background image repeat */
 }
 
+/* Header element */
+header {
+    background: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135); /* Gradient background for the header */
+    padding: 20px; /* Padding for the header */
+    text-align: center; /* Center aligning header content */
+    color: white; /* Text color */
+}
+
+/* Header content */
+.header-content {
+    display: flex; /* Using flexbox for layout */
+    flex-wrap: wrap; /* Allowing flex items to wrap */
+    justify-content: center; /* Center-aligning flex items */
+}
+
+/* Download buttons container */
+.download-buttons-container {
+    margin-top: 20px; /* Top margin */
+    width: 100%; /* Full width */
+    display: flex; /* Using flexbox for layout */
+    flex-wrap: wrap; /* Allowing flex items to wrap */
+    justify-content: center; /* Center aligning flex items */
+}
+
+/* Download buttons */
+.download-button {
+    margin: 0 10px 10px 10px; /* Margin for spacing */
+    padding: 8px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Removing underline */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Border radius */
+}
+
+/* Main content container */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    margin-top: 20px; /* Top margin */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Setting flex direction to column */
+    align-items: center; /* Center aligning items */
 }
 
-.json-upload, .word-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+/* Input boxes */
+.input-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Bottom margin */
+    border-radius: 5px; /* Border radius */
 }
 
-input, button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+.input-box label {
+    margin-right: 10px; /* Right margin for label */
 }
 
-button {
-    background-color: #f0f0f0;
-    cursor: pointer;
+.input-box input[type="file"],
+.input-box input[type="text"],
+.input-box button {
+    padding: 10px; /* Padding for inputs and buttons */
+    font-size: 16px; /* Font size */
 }
 
-.downloadfood-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+.input-box button {
+    cursor: pointer; /* Changing cursor to pointer on hover */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Border radius */
 }
 
-.downloadanimal-button {
-    position: fixed;
-    top: 20px;
-    left: 250px;
+/* Fun fact box */
+.fun-fact-box {
+    position: fixed; /* Fixed positioning */
+    top: 105px; /* Distance from the top */
+    right: 04px; /* Distance from the right */
+    width: 300px; /* Width of the box */
+    padding: 10px; /* Padding */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
-.downloadcountries-button {
-    position: fixed;
-    top: 20px;
-    left: 490px;
+
+/* Fun fact content */
+.fun-fact-content {
+    font-size: 16px; /* Font size */
 }
